@@ -29,6 +29,9 @@ int* pivotArray(int* nums, int numsSize, int pivot, int* returnSize) {
         ptr[i + countL + countE] = ptrG[i];
     }
 
+    free(ptrL);
+    free(ptrG);
+
     return ptr;
 
 }
